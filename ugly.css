@@ -195,4 +195,27 @@ img {
         -ms-transform: scale(1);
         transform: scale(1);
     }
+
+    .ball {
+        animation: none;
+
+    }
+
+}
+
+
+@keyframes move {
+    from {
+        width: 55%;
+    }
+
+    to {
+        width: 85%;
+    }
+
+}
+
+.ball {
+    animation: 1s move alternate-reverse infinite;
+
 }

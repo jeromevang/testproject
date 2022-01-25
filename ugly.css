@@ -1,47 +1,69 @@
 @charset "UTF-8";
+
 /* CSS Document */
-a:link {color:#00FF69;text-decoration:none;}      /* unvisited link */
-a:hover {color:#FF7A02;border-bottom:5px d #FF00B4; cursor:url("images/picks.jpg"),auto;}  /* mouse over link */
-a:active {color:#790002;}  /* selected link */
-a:visited {color:#FF0000;}
-body {
-    cursor:url("images/picks.jpg"),auto;
-    background-image: url("images/guitar.jpg");
-	background-color: #00FFF1;
-	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
-	font-size:150%;
-	color:orange;
-	cursor:url("images/picks.jpg"),auto;
+a:link {
+    color: #00FF69;
+    text-decoration: none;
 }
-p	{
-	text-indent:left;
+
+/* unvisited link */
+a:hover {
+    color: #FF7A02;
+    border-bottom: 5px d #FF00B4;
+    cursor: url("images/picks.jpg"), auto;
+}
+
+/* mouse over link */
+a:active {
+    color: #790002;
+}
+
+/* selected link */
+a:visited {
+    color: #FF0000;
+}
+
+body {
+    cursor: url("images/picks.jpg"), auto;
+    background-image: url("images/guitar.jpg");
+    background-color: #00FFF1;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    font-size: 150%;
+    color: orange;
+    cursor: url("images/picks.jpg"), auto;
+}
+
+p {
+    text-indent: left;
     text-align: left;
     color: green
 }
 
 h1 {
-	color:purple;
-	text-align:center;
-	text-decoration:underline;
-	text-transform:uppercase;
+    color: purple;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
-img { 
-   background:#FF8800;
-   border:double; 20px #DF489D;
+
+img {
+    background: #FF8800;
+    border: double 20px #DF489D;
 }
+
 #mainText {
-	cursor:auto;
-	position:relative;
-	margin-bottom:50px;
-	padding:25px;
-	width: 800px; 
-	background-color:#FFF100;
-	background-image: url("images/guitar.jpg");
-	margin: 50px auto;
-	text-align: left;
-	box-shadow: 15px 15px 15px #3AA468;
-	border-radius: 22px;
-	border:#FF009D 20px double;
+    cursor: auto;
+    position: relative;
+    margin-bottom: 50px;
+    padding: 25px;
+    width: 800px;
+    background-color: #FFF100;
+    background-image: url("images/guitar.jpg");
+    margin: 50px auto;
+    text-align: left;
+    box-shadow: 15px 15px 15px #3AA468;
+    border-radius: 22px;
+    border: #FF009D 20px double;
 }
 
 
@@ -56,43 +78,121 @@ img {
 }
 
 @-webkit-keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    50.01% { opacity: 0; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @-moz-keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    50.01% { opacity: 0; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @-ms-keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    50.01% { opacity: 0; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @-o-keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    50.01% { opacity: 0; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 1; }
-    50.01% { opacity: 0; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    50.01% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
-.grow:hover
-{
-        -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
+.grow:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    #mainText {
+        cursor: auto;
+        position: relative;
+        margin-bottom: 50px;
+        padding: 0px;
+        width: 100%;
+        background-color: #FFF100;
+        background-image: url("images/guitar.jpg");
+        margin: 0px auto;
+        text-align: left;
+        box-shadow: none;
+        border-radius: 0;
+        border: none
+    }
+
+    .grow:hover {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
 }

@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+a:link {color:#00FF69;text-decoration:none;}      /* unvisited link */
+a:hover {color:#FF7A02;border-bottom:5px d #FF00B4; cursor:url("images/picks.jpg"),auto;}  /* mouse over link */
+a:active {color:#790002;}  /* selected link */
+a:visited {color:#FF0000;}
+body {
+    cursor:url("images/picks.jpg"),auto;
+    background-image: url("images/guitar.jpg");
+	background-color: #00FFF1;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	font-size:150%;
+	color:orange;
+	cursor:url("images/picks.jpg"),auto;
+}
+p	{
+	text-indent:left;
+}
+h1 {
+	color:purple;
+	text-align:center;
+	text-decoration:underline;
+	text-transform:uppercase;
+}
+img { 
+   background:#FF8800;
+   border:double; 20px #DF489D;
+}
+#mainText {
+	cursor:auto;
+	position:relative;
+	margin-bottom:50px;
+	padding:25px;
+	width: 800px; 
+	background-color:#FFF100;
+	background-image: url("images/guitar.jpg");
+	margin: 50px auto;
+	text-align: left;
+	box-shadow: 15px 15px 15px #3AA468;
+	border-radius: 22px;
+	border:#FF009D 20px double;
+}
+
+
+/* I stole this from http://visualidiot.com/articles/css3 It recreates the old <blink> tag.*/
+
+.blink {
+    -webkit-animation: blink .75s linear infinite;
+    -moz-animation: blink .75s linear infinite;
+    -ms-animation: blink .75s linear infinite;
+    -o-animation: blink .75s linear infinite;
+    animation: blink .75s linear infinite;
+}
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
